@@ -18,6 +18,6 @@
         </testsuite>
     </testsuites>
     <php>
-        <env name="OC_ROOT" value="C:\Users\Ecotel\expigo1\www" />
+        <env name="OC_ROOT" value="/home/travis/build/fercamp09/expigo1/www" />
     </php>
 </phpunit>
