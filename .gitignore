@@ -1,4 +1,6 @@
 /target
+/www/config.php
+/www/admin/config.php
 /.idea
 .env
 *~
