@@ -1,0 +1,15 @@
+language: php
+env:
+  - OC_ROOT=/home/travis/build/beyondit/opencart-test-suite/www/
+php:
+  - "5.4"
+  - "5.5"
+  - "5.6"
+install:
+  composer install
+before_script:
+  - echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
+script:
+  - bin/robo travis:opencart-setup
+  - bin/phpunit --testsuite catalog-tests
+  - bin/phpunit --testsuite admin-test
