@@ -1,6 +1,6 @@
 language: php
 env:
-  - OC_ROOT=/home/travis/build/expigo1/www/
+  - OC_ROOT=/home/travis/build/fercamp09/expigo1/www/
 php:
   - "5.4"
   - "5.5"
